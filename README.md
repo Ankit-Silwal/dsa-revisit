@@ -1,30 +1,4 @@
-# DSA Revisit
-
-A Java project for Data Structures and Algorithms practice and revision.
-
-## Project Structure
-
-- `src/` - Source code files
-- `bin/` - Compiled class files
-- `lib/` - External libraries (if needed)
-
-## Getting Started
-
-### Prerequisites
-- Java 8 or higher
-- Java compiler (`javac`)
-
-### Compiling
-```bash
-javac -d bin src/*.java
-```
-
-### Running
-```bash
-java -cp bin ClassName
-```
-
-## Topics Covered
-- Data Structures
-- Algorithms
-- Problem Solving Patterns
+various sorting algorithm are still left to do 
+And subseq and other shits using iterative method are also left cause i fount it boring though know it by the method of recursion since that shit is way intersting that the boring old fashioned iteration and shit lol.
+need to look subset with duplicates question with double list
+Kinda enjoying that shit so gooota say it is awesome!!
