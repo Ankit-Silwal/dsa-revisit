@@ -20,7 +20,7 @@ public class SubSequenceWithDuplicates {
         List<List<Integer>> ans = new ArrayList<>();
         List<Integer> take = new ArrayList<>(p);
         take.add(up[0]);
-
+ 
         ans.addAll(solve(take, Arrays.copyOfRange(up, 1, up.length)));
         int i = 1;
         while (i < up.length && up[i] == up[0]) {
