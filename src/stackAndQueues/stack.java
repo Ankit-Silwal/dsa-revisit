@@ -1,13 +1,20 @@
+package stackAndQueues;
+
 public class stack {
   public static void main(String[] args) throws Exception {
-      customStack stack=new customStack(5);
-      stack.push(45);
-      stack.push(45);
-      stack.push(45);
+      dynamicStack stack=new dynamicStack(5);
+      stack.push(1);
+      stack.push(2);
+      stack.push(3);
+      stack.push(4);
+      stack.push(5);
+      stack.push(6); // Triggers resize
+      
       System.out.println(stack.pop());
       System.out.println(stack.pop());
       System.out.println(stack.pop());
       System.out.println(stack.pop());
-
+      System.out.println(stack.pop());
+      System.out.println(stack.pop());
   }
 }
