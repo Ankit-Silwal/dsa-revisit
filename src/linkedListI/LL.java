@@ -47,6 +47,22 @@ public class LL{
     size++;
   }
 
+  //insert using recursion
+  public void insertRec(int val,int index){
+    head=insertRec(val, index, head);
+  }
+  private Node insertRec(int val,int index,Node node){
+    if(index==0){
+      Node temp=new Node(val,node);
+      size++;
+      return temp;
+    }else{
+      node.next=insertRec(val, index--,node.next);
+      return node;
+    }
+    
+  }
+
   public void deleteFirst(){
     head=head.next;
     if(head==null){
@@ -109,6 +125,18 @@ public class LL{
     public Node(int value,Node next){
       this.value=value;
       this.next=next;
+    }
+  }
+
+  public void duplicates(){
+    Node node=head;
+    while(node.next!=null){
+      if(node.value==node.next.value){
+        node.next=node.next.next;
+        size--;
+      }else{
+        node=node.next;
+      }
     }
   }
 }
